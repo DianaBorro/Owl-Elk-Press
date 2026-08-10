@@ -1,0 +1,91 @@
+/* src/About.css */
+
+/* Boutique Press Section Block wrapper */
+.press-block {
+    padding: 6rem 6% 4rem 6%;
+}
+
+/* Container card setup holding the background layer */
+.press-card {
+    position: relative;        /* Anchors the background logo layer */
+    background: var(--card-surface, #ffffff);
+    border: 1px solid rgba(22, 26, 24, 0.05);
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 5rem 3rem;        /* Generous spacing for readability */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.01);
+    overflow: hidden;          /* Caps the background image inside the rounded corners */
+}
+
+/* BACKGROUND WATERMARK LOGO LAYER */
+.press-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* Pulls the logo from your public folder asset */
+    background-image: url('/OwlAndElk.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;     /* Controls how large the logo spreads inside the card */
+
+    /* Softens the image so it sits delicately under your text */
+    opacity: 0.04;
+
+    z-index: 1;               /* Places the logo behind the text content */
+    pointer-events: none;     /* Lets users click/select text smoothly over the image */
+}
+
+/* Pushes the text elements safely to the front layer */
+.press-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+.section-badge {
+    font-family: system-ui, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--sage-accent, #7a9485);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.press-card h2 {
+    color: var(--text-main, #2c3531);
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+}
+
+.decorative-divider {
+    color: var(--sage-accent, #7a9485);
+    letter-spacing: 6px;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.press-manifesto {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444a47;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .press-card {
+        padding: 3.5rem 1.5rem;
+    }
+    .press-card::before {
+        background-size: 90%;   /* Scales up on tiny screens to remain visible */
+    }
+}

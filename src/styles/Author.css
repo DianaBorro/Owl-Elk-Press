@@ -1,0 +1,106 @@
+/* Author Section Structural Grid */
+.author-block {
+    padding: 6rem 6%;
+    background: #f2ede7; /* Slightly deeper, warm archival paper accent wash */
+    border-top: 1px solid rgba(22, 26, 24, 0.04);
+}
+
+.author-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4.5rem;
+    max-width: 1050px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* Image Framing Styling */
+.author-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.author-profile-img {
+    width: 100%;
+    max-width: 380px;
+    height: 480px;
+    object-fit: cover; /* Keeps dimensions stable without stretching your photo */
+    border-radius: 4px;
+    box-shadow: 0 12px 35px rgba(22, 26, 24, 0.12);
+    z-index: 2;
+    position: relative;
+}
+
+/* Subtle background accent frame that mimics high-end publishing layouts */
+.author-image-frame-deco {
+    position: absolute;
+    width: 100%;
+    max-width: 380px;
+    height: 480px;
+    border: 1px solid var(--sage-accent);
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    border-radius: 4px;
+    opacity: 0.5;
+}
+
+/* Text Typography Framing */
+.author-bio {
+    text-align: left;
+}
+
+.author-bio h2 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin: 0.5rem 0 1.5rem 0;
+    letter-spacing: -0.5px;
+}
+
+.biography-text p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #3b423e;
+    margin-bottom: 1.25rem;
+}
+
+.author-actions {
+    margin-top: 2rem;
+}
+
+.btn-author-contact {
+    background: transparent;
+    color: var(--ink-dark) !important;
+    border: 1px solid var(--ink-dark);
+    display: inline-block;
+}
+
+.btn-author-contact:hover {
+    background: var(--ink-dark);
+    color: var(--mist-light) !important;
+}
+
+/* Responsive Scaling Overrides for Tablets and Smartphones */
+@media (max-width: 820px) {
+    .author-layout {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+        text-align: center;
+    }
+
+    .author-bio {
+        text-align: center;
+    }
+
+    .author-profile-img,
+    .author-image-frame-deco {
+        max-width: 320px;
+        height: 400px;
+    }
+
+    .author-image-frame-deco {
+        top: 12px;
+        left: 12px;
+    }
+}
