@@ -8,11 +8,9 @@ https://owl-and-elk-press.web.app/
 ---
 
 ## 📺 Project Demos
+Desktop Walkthrough: [Owl & Elk Press Website Demo Desktop](https://youtu.be/5uVpK2_hsbI)
 
-| Desktop Walkthrough | Mobile Layout Tour |
-| :---: | :---: |
-| [![Desktop Demo](https://youtube.com)](https://youtu.be) | [![Mobile Demo](https://youtube.com)](https://youtube.com/shorts/xX1ZgOWN7Nk) |
-| [Owl & Elk Press Website Demo](https://youtu.be) | [Owl & Elk Press Phone Demo](https://youtube.com/shorts/xX1ZgOWN7Nk) |
+Mobile Layout Tour: [Owl & Elk Press Website Demo Mobile](https://youtube.com/shorts/xX1ZgOWN7Nk)
 
 ---
 
