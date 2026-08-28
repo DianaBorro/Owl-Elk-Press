@@ -280,12 +280,37 @@ body {
   border: 1px solid var(--text-main);
 }
 
+.btn-amazon, .btn-ebook {
+  display: block;
+  width: 100%;
+  max-width: 280px; 
+  margin: 12px auto;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 0.25s ease; 
+}
+
 .btn-amazon {
+  background: transparent;
+  color: #232f3e !important;
+  border: 2px solid #232f3e;
+}
+
+.btn-amazon:hover {
   background: #232f3e;
   color: #ffffff !important;
 }
 
-.btn-amazon:hover {
+.btn-ebook {
+  background: #232f3e;
+  color: #ffffff !important;
+}
+
+.btn-ebook:hover {
   background: #111111;
 }
 

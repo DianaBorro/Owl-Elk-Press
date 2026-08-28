@@ -1,7 +1,38 @@
 import twwbam_cover from "../assets/The Wolf Who Became a Man copy.jpg";
 import tsaf_cover from "../assets/the street artist’s faun.png";
+import {useState} from "react";
 
 function BookCard() {
+    const [loading, setLoading] = useState(false);
+    const handleBuyEbook = async (e: React.MouseEvent) => {
+        e.preventDefault();
+        setLoading(true);
+
+        try {
+            const response = await fetch('https://localhost:7200/api/payment/create-checkout-session', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error('The backend is not giving a 200 :(');
+            }
+
+            const data = await response.json();
+
+            if (data.url) {
+                window.location.href = data.url;
+            }
+        } catch (error) {
+            console.error('Error while trying to make the purchase:', error);
+            alert('There was an issue while trying to purchase the eBook. Please try again later!');
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <div className="book-grid">
 
@@ -54,6 +85,17 @@ function BookCard() {
                         As they travel from town to town, he gets the chance to escape. Will he take it?
                     </p>
                     <div className="book-actions">
+                        <button
+                            onClick={handleBuyEbook}
+                            disabled={loading}
+                            className="btn btn-ebook"
+                            style={{
+                                cursor: loading ? 'not-allowed' : 'pointer',
+                                opacity: loading ? 0.7 : 1
+                            }}
+                        >
+                            {loading ? 'Caricamento...' : 'Buy E-book'}
+                        </button>
                         <a
                             href="https://amzn.eu/d/0f8hs1Kh"
                             target="_blank"
