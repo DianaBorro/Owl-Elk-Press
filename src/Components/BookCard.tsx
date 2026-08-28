@@ -9,7 +9,7 @@ function BookCard() {
         setLoading(true);
 
         try {
-            const response = await fetch('https://localhost:7200/api/payment/create-checkout-session', {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/payment/create-checkout-session`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
