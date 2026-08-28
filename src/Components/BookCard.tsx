@@ -48,9 +48,10 @@ function BookCard() {
                     <h3>The Street Artist's Faun</h3>
                     <p className="book-author">By Diana Borro</p>
                     <p className="book-synopsis">
-                        A captivating short story that bridges modern urban environments with classic mythological
-                        wonder.
-                        Perfect for readers looking for a quick, enchanting escape into a hidden world.
+                        This is the story of a street artist and her prisoner, a faun. 
+                        He ought to hate her, yet he knows nothing but love for her. 
+                        Or, rather, obsession mistaken for love. 
+                        As they travel from town to town, he gets the chance to escape. Will he take it?
                     </p>
                     <div className="book-actions">
                         <a
