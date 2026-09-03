@@ -4,13 +4,13 @@ function HeroChamber() {
     <section className="hero-chamber">
         <div className="hero-overlay"></div>
         <div className="hero-wrapper">
-            <span className="hero-eyebrow">Now Available Worldwide</span>
+            <span className="hero-eyebrow">Find fantasy-rich stories full of</span>
             <h1 className="hero-title">
-                Where Myth Collides <br />
-                <span className="title-accent">With Human Nature.</span>
+                Action, Mystery, Romance, <br />
+                <span className="title-accent">Lyrical Prose...</span>
             </h1>
             <p className="hero-description">
-                A warm welcome to Owl & Elk Press! Look around and read finished books, short stories, 
+                And much more! A warm welcome to Owl & Elk Press! Look around and read finished books, short stories, 
                 and chapters of my next ongoing work!
             </p>
             <div className="hero-action-row">
