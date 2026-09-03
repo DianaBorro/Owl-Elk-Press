@@ -4,8 +4,9 @@ import '../styles/BookShelf.css';
 function Bookshelf() {
     return (
         <section id="bookshelf" className="content-block books-block">
-            <h2>Featured Publications</h2>
-            <p className="section-intro">Explore the foundational fantasy universes crafted by Owl & Elk Press.</p>
+            <h2>The Master Library</h2>
+            <p className="section-intro">Discover the secrets of the completed works, 
+                get immersed in their fantasy universes and fall in love with their characters!</p>
             <BookCard />
         </section>
     )
