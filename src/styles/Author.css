@@ -65,10 +65,6 @@
     margin-bottom: 1.25rem;
 }
 
-.author-actions {
-    margin-top: 2rem;
-}
-
 .btn-author-contact {
     background: transparent;
     color: var(--ink-dark) !important;

@@ -4,18 +4,18 @@ function HeroChamber() {
     <section className="hero-chamber">
         <div className="hero-overlay"></div>
         <div className="hero-wrapper">
-            <span className="hero-eyebrow">Now Available Worldwide</span>
+            <span className="hero-eyebrow">Find fantasy-rich stories full of</span>
             <h1 className="hero-title">
-                Where Myth Collides <br />
-                <span className="title-accent">With Human Nature.</span>
+                Action, Mystery, Romance, <br />
+                <span className="title-accent">Lyrical Prose...</span>
             </h1>
             <p className="hero-description">
-                Welcome to Owl & Elk Press. We craft meticulous, dark indie fantasy landscapes
-                and house the official catalog and creative worlds of author Diana Borro.
+                And much more! A warm welcome to Owl & Elk Press! Look around and read finished books, short stories, 
+                and chapters of my next ongoing work!
             </p>
             <div className="hero-action-row">
-                <a href="#bookshelf" className="hero-btn btn-solid">Explore the Catalogue</a>
-                <a href="#about-press" className="hero-btn btn-outline">Publishing Services</a>
+                <a href="#bookshelf" className="hero-btn btn-solid">The Master Library</a>
+                <a href="#about-press" className="hero-btn btn-outline">Tales from the Inkwell</a>
             </div>
         </div>
     </section>
