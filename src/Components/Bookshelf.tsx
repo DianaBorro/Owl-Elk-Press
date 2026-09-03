@@ -10,9 +10,9 @@ function Bookshelf() {
             <p className="section-intro">Explore the foundational fantasy universes crafted by Owl & Elk Press.</p>
             <div className="bookshelf-horizontal-scroll">
                 <BookCard
-                    title="The Street Artist's Faun"
-                    stripePriceId="price_1U9Y1lFeEIEfaRhKOFXHKZeqd"
-                    genreTag="Romantasy"
+                    title="The Wolf Who Became a Man"
+                    stripePriceId="price_UN_ALTRO_PRICE_ID_DI_STRIPE"
+                    genreTag="Victorian Fantasy, Romantasy"
                     synopsis="Can a wolf learn how to love? When turned into a human due to a bet between the Moonlady, 
                     a powerful celestial being, and Lord Zessesis, a vampire king, all Damocles can focus on is how to go back. 
                     He's taken in by a wealthy Victorian family, where he meets Clarisse, 
@@ -24,9 +24,9 @@ function Bookshelf() {
                 />
 
                 <BookCard
-                    title="The Wolf Who Became a Man"
-                    stripePriceId="price_UN_ALTRO_PRICE_ID_DI_STRIPE"
-                    genreTag="Romantasy"
+                    title="The Street Artist's Faun"
+                    stripePriceId="price_1U9Y1lFeEIEfaRhKOFXHKZeqd"
+                    genreTag="Mythic Fiction, Romantasy"
                     synopsis=" This is the story of a street artist and her prisoner, a faun.
                      He ought to hate her, yet he knows nothing but love for her.
                      Or, rather, obsession mistaken for love.
