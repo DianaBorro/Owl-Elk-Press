@@ -17,18 +17,24 @@ function Author() {
                 <h2>Meet the Author-Founder</h2>
                 <div className="biography-text">
                     <p>
-                        Hello! I am Diana Borro, the pen behind the press. I craft complex, psychological fantasy
-                        universes where classic myths collide directly with the depths of human nature.
+                        Hello! I am Diana Borro, the pen behind the press. 
+                        Writing is my passion and I hope you'll love the worlds and characters I create just as I do!
                     </p>
                     <p>
-                        I founded Owl & Elk Press to not only host my own writing journeys, but to create an intentional,
-                        author-first ecosystem where rich storytelling can flourish entirely without constraints. Whether following
-                        a displaced wolf through Victorian alleys or exploring dark mythic dependencies, my goal is
-                        to leave readers deeply immersed.
+                        I founded Owl & Elk Press as I published my debut novel, "The Wolf Who Became a Man", 
+                        the first book in a trilogy. I plan to fill it with wonderful worlds where readers
+                        can feel at home. I think of myself as an optimist, 
+                        and although there are dark moments in my stories, they're there as a staircase
+                        to learn and grow. I truly believe that inner peace and serenity can be created and found
+                        in any circumstance, and that's one of the messages I try to promote with my stories.
                     </p>
-                </div>
-                <div className="author-actions">
-                    <a href="#contact" className="btn btn-author-contact">Request Speaking / Signings</a>
+                    <p>
+                        With this I give you a warm welcome to the nest! Whether you'll visit every once in a while
+                        or every day, you're always welcome, make this your home!
+                    </p>
+                    <p>
+                        With love, Diana
+                    </p>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 import twwbam_cover from "../assets/The Wolf Who Became a Man copy.jpg";
 import tsaf_cover from "../assets/the street artist’s faun.png";
+import "../styles/BookCard.css";
 
 function BookCard() {
     return (
@@ -53,6 +54,13 @@ function BookCard() {
                         Or, rather, obsession mistaken for love. 
                         As they travel from town to town, he gets the chance to escape. Will he take it?
                     </p>
+                    <blockquote className="book-excerpt">
+                        <span className="excerpt-quote-mark">“</span>
+                        Maybe it was because of the book. 
+                        Maybe it was the sweet poetry of the night whispered by the stars, 
+                        or that light wind that made one wish for a hug. She did not know what led to it, 
+                        but after years, she looked at him. She saw him. He looked like a statue.
+                    </blockquote>
                     <div className="book-actions">
                         <a
                             href="https://amzn.eu/d/0f8hs1Kh"
