@@ -2,7 +2,7 @@ import {useState} from "react";
 
 interface BookProps {
     title: string;
-    stripePriceId: string;
+    stripePriceId?: string;
     genreTag?: string;
     synopsis: string;
     coverImg: string;
@@ -62,14 +62,14 @@ function BookCard({
                     <h3>{title}</h3>
                     {synopsis && <p className="book-synopsis">{synopsis}</p>}
 
-                    <button
+                    {stripePriceId && (<button
                         onClick={handleBuyEbook}
                         disabled={loading}
                         className="btn btn-ebook"
                         style={{cursor: loading ? 'not-allowed' : 'pointer', opacity: loading ? 0.7 : 1}}
                     >
                         {loading ? 'Loading...' : 'Buy Now!'}
-                    </button>
+                    </button>)}
                     
                     <div className="book-actions">
                         {amazonLink && (

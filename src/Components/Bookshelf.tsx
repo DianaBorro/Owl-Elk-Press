@@ -11,7 +11,7 @@ function Bookshelf() {
             <div className="bookshelf-horizontal-scroll">
                 <BookCard
                     title="The Wolf Who Became a Man"
-                    stripePriceId="price_UN_ALTRO_PRICE_ID_DI_STRIPE"
+                    //stripePriceId="price_UN_ALTRO_PRICE_ID_DI_STRIPE"
                     genreTag="Victorian Fantasy, Romantasy"
                     synopsis="Can a wolf learn how to love? When turned into a human due to a bet between the Moonlady, 
                     a powerful celestial being, and Lord Zessesis, a vampire king, all Damocles can focus on is how to go back. 
@@ -25,7 +25,8 @@ function Bookshelf() {
 
                 <BookCard
                     title="The Street Artist's Faun"
-                    stripePriceId="price_1U9Y1lFeEIEfaRhKOFXHKZeqd"
+                    stripePriceId="price_1U9Y1lFeEIEfaRhKOFXHKZeq"
+                    //stripePriceId="price_1U9Y1lFeEIEfaRhKOFXHKZeqd"
                     genreTag="Mythic Fiction, Romantasy"
                     synopsis=" This is the story of a street artist and her prisoner, a faun.
                      He ought to hate her, yet he knows nothing but love for her.
