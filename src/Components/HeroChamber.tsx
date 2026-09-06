@@ -1,3 +1,4 @@
+import '../styles/HeroChamber.css';
 
 function HeroChamber() {
     return (
@@ -14,8 +15,8 @@ function HeroChamber() {
                 and chapters of my next ongoing work!
             </p>
             <div className="hero-action-row">
-                <a href="#bookshelf" className="hero-btn btn-solid">The Master Library</a>
-                <a href="#about-press" className="hero-btn btn-outline">Tales from the Inkwell</a>
+                <a href="#bookshelf" className="hero-btn btn-solid" data-tooltip="Click here to read my published works!">The Master Library</a>
+                <a href="#about-press" className="hero-btn btn-outline" data-tooltip="Click here to read my work in progress!">Tales from the Inkwell</a>
             </div>
         </div>
     </section>

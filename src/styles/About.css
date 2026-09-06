@@ -1,25 +1,21 @@
-/* src/About.css */
 
-/* Boutique Press Section Block wrapper */
 .press-block {
     padding: 6rem 6% 4rem 6%;
 }
 
-/* Container card setup holding the background layer */
 .press-card {
-    position: relative;        /* Anchors the background logo layer */
+    position: relative;        
     background: var(--card-surface, #ffffff);
     border: 1px solid rgba(22, 26, 24, 0.05);
     max-width: 850px;
     margin: 0 auto;
-    padding: 5rem 3rem;        /* Generous spacing for readability */
+    padding: 5rem 3rem;        
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.01);
-    overflow: hidden;          /* Caps the background image inside the rounded corners */
+    overflow: hidden;          
 }
 
-/* BACKGROUND WATERMARK LOGO LAYER */
 .press-card::before {
     content: "";
     position: absolute;
@@ -28,20 +24,17 @@
     right: 0;
     bottom: 0;
 
-    /* Pulls the logo from your public folder asset */
     background-image: url('/OwlAndElk.png');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;     /* Controls how large the logo spreads inside the card */
+    background-size: 100%;     
 
-    /* Softens the image so it sits delicately under your text */
     opacity: 0.04;
 
-    z-index: 1;               /* Places the logo behind the text content */
-    pointer-events: none;     /* Lets users click/select text smoothly over the image */
+    z-index: 1;               
+    pointer-events: none;    
 }
 
-/* Pushes the text elements safely to the front layer */
 .press-card > * {
     position: relative;
     z-index: 2;
@@ -80,12 +73,11 @@
     margin: 0 auto;
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 768px) {
     .press-card {
         padding: 3.5rem 1.5rem;
     }
     .press-card::before {
-        background-size: 90%;   /* Scales up on tiny screens to remain visible */
+        background-size: 90%;   
     }
 }
