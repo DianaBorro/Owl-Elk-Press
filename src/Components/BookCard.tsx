@@ -1,4 +1,5 @@
 import {useState} from "react";
+import "../styles/BookCard.css";
 
 interface BookProps {
     title: string;

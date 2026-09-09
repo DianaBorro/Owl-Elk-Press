@@ -25,7 +25,7 @@ function Bookshelf() {
 
                 <BookCard
                     title="The Street Artist's Faun"
-                    stripePriceId="price_1U9Y1lFeEIEfaRhKOFXHKZeq"
+                    stripePriceId="price_1UDnIiCAtLYbctKhXhqu51Kd"
                     //stripePriceId="price_1U9Y1lFeEIEfaRhKOFXHKZeqd"
                     genreTag="Mythic Fiction, Romantasy"
                     synopsis=" This is the story of a street artist and her prisoner, a faun.

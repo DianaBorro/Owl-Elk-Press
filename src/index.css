@@ -5,7 +5,12 @@
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
-  --border: #e5e4e7;
+  
+  --button-bg: #1e293b;
+  --button-bg-hover: #0f172a;
+  --button-bg-hover-subtle: rgba(55, 34, 19, 0.04);
+  
+  --border: #57361f;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
@@ -26,6 +31,12 @@
    ========================================== */
 body[data-theme="autumn"] {
   --bg: #121614;              /* Un nero foresta caldissimo, quasi impercettibile */
+  
+  --button-bg: #57361f;
+  --button-bg-hover: #372213;
+  --button-bg-hover-subtle: rgba(255, 108, 0, 0.04);
+  --button-border-subtle: rgba(55, 34, 19, 0.11);
+  
   --text: #e3dcd2;            /* Testo principale chiaro (crema/avorio) per massima leggibilità */
   --text-h: #f59e0b;          /* I titoli diventano color Oro Ambrato/Zucca caldo */
   --border: #453224;          /* Bordi color marrone corteccia discreto */

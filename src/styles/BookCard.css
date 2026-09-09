@@ -1,29 +1,67 @@
-.book-excerpt {
-    position: relative;
-    font-family: 'Lora', 'Georgia', serif; 
-    font-size: 1.05rem;
-    font-style: italic;
-    line-height: 1.8;
-    color: #1a202c;
-
-    background-color: #fcfbfa; 
-    border-left: 4px solid #d4af37; 
-    padding: 1.5rem 1.5rem 1.5rem 2.5rem; 
-    margin: 2rem auto;
-    max-width: 90%; 
-    border-radius: 0 8px 8px 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03); 
-    text-align: left; 
+/* Layout Container Adjustments */
+.book-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Smooth spacing between text, primary button, and secondary links */
+    max-width: 400px; /* Prevents buttons from stretching too wide on desktop */
 }
 
-.excerpt-quote-mark {
-    position: absolute;
-    top: -5px;
-    left: 10px;
-    font-size: 4rem;
-    font-family: 'Georgia', serif;
-    color: #d4af37; 
-    opacity: 0.3; 
-    line-height: 1;
-    user-select: none; 
+.book-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Even spacing between Amazon and Goodreads buttons */
+    width: 100%;
+}
+
+/* Base Button Reset & Global Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 24px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px; /* Smooth, modern slightly rounded edges */
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.btn-ebook {
+    background-color: var(--button-bg);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-ebook:hover:not(:disabled) {
+    background-color: var(--button-bg-hover);
+    transform: translateY(-1px); 
+}
+
+.btn-amazon {
+    background-color: transparent;
+    color: var(--border); 
+    border: 1px solid var(--button-border-subtle); 
+}
+
+.btn-amazon:hover {
+    background-color: var(--button-bg-hover-subtle);
+    border-color: #94a3b8; /* Border sharpens slightly */
+    color: #0f172a;
+}
+
+/* 3. Tertiary Action: "Give your review on Goodreads!" */
+
+.btn-goodreads {
+    background: transparent;
+    color: #372213 !important;
+    border: 1px solid #372213;
+}
+
+.btn-goodreads:hover {
+    background: #372213;
+    color: #ffffff !important;
 }
