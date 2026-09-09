@@ -7,7 +7,7 @@
   --card-bg: #ffffff;
 
   /* High-Contrast Typography Ink Tones */
-  --text-main: #11161b;      /* Deep midnight charcoal slate (Highly readable, sharp contrast) */
+  --text-main: rgb(17, 22, 27);      /* Deep midnight charcoal slate (Highly readable, sharp contrast) */
   --ink-dark: #11161b;       /* Locks down text headers for accessibility compliance */
 
   /* True Cover Artwork Metallic Accents */
@@ -29,78 +29,6 @@ body {
   padding: 0;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
-}
-
-/* Romantasy Immersive Hero Chamber */
-.hero-chamber {
-  position: relative;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 4rem 6%;
-  /* Creates a subtle dark fantasy textured look without needing a huge external asset */
-  background: linear-gradient(135deg, #111513 0%, #1c2420 100%);
-  color: var(--mist-light);
-  overflow: hidden;
-}
-
-.hero-wrapper {
-  position: relative;
-  z-index: 5;
-  max-width: 780px;
-}
-
-.hero-eyebrow {
-  font-family: system-ui, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--gold-glow);
-  display: block;
-  margin-bottom: 1.5rem;
-}
-
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 400;
-  line-height: 1.15;
-  margin: 0 0 1.5rem 0;
-  letter-spacing: -0.5px;
-}
-
-.title-accent {
-  font-style: italic;
-  color: var(--gold-glow);
-  font-family: 'Georgia', serif;
-}
-
-.hero-description {
-  font-size: 1.15rem;
-  line-height: 1.7;
-  color: rgba(247, 246, 244, 0.8);
-  margin-bottom: 2.5rem;
-}
-
-.hero-action-row {
-  display: flex;
-  justify-content: center;
-  gap: 1.25rem;
-  flex-wrap: wrap;
-}
-
-.hero-btn {
-  padding: 0.9rem 2rem;
-  font-family: system-ui, sans-serif;
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: all 0.25s ease;
 }
 
 .btn-solid {
@@ -280,24 +208,75 @@ body {
   border: 1px solid var(--text-main);
 }
 
-.btn-amazon {
-  background: #232f3e;
-  color: #ffffff !important;
+.bookshelf-horizontal-scroll {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 30px;
+  padding: 20px 10px;
+  scroll-behavior: smooth;
+  align-items: stretch; 
 }
 
-.btn-amazon:hover {
-  background: #111111;
+.bookshelf-horizontal-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.bookshelf-horizontal-scroll::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
 }
 
-.btn-goodreads {
-  background: transparent;
-  color: #372213 !important;
-  border: 1px solid #372213;
+.book-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 350px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.btn-goodreads:hover {
-  background: #372213;
-  color: #ffffff !important;
+.book-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-grow: 1; 
+}
+
+.book-synopsis {
+  flex-grow: 1;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.book-actions {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  margin-top: auto; 
+  width: 100%;
+}
+
+.book-actions .btn,
+.book-actions button {
+  width: 100%;              
+  height: 46px;             
+  display: inline-flex;
+  justify-content: center;  
+  align-items: center;      
+  box-sizing: border-box;
+  padding: 0 15px;          
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+/* For when Stripe is loading */
+.book-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
 }
 
 /* Footer */
